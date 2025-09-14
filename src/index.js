@@ -13,6 +13,12 @@ async function addBreadView() {
     return html
 }
 
+async function addCatView() {
+    const html = await fs.readFile("./src/views/addCat.html", {encoding: "utf-8"})
+
+    return html
+}
+
 const server = http.createServer(async (req, res) => {
 
 if (req.url === "/") {
@@ -35,6 +41,15 @@ if (req.url === "/") {
 
 } else if (req.url === "/cats/add-breed") {
     const html = await addBreadView()
+
+    res.writeHead(200, {
+        "content-type": "text/html"
+    })
+
+    res.write(html)
+
+} else if (req.url === "/cats/add-cat") {
+    const html = await addCatView()
 
     res.writeHead(200, {
         "content-type": "text/html"
