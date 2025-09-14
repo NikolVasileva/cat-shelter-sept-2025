@@ -5,3 +5,5 @@ SoftUni JS Back-End Course Project
 2. Dev environment
 3. Debugging
 4. Add basic HTTP Server
+5. Show Home Page
+6. Read Home HTML from File System
