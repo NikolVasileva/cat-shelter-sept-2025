@@ -7,3 +7,4 @@ SoftUni JS Back-End Course Project
 4. Add basic HTTP Server
 5. Show Home Page
 6. Read Home HTML from File System
+7. Read Site CSS from File System
